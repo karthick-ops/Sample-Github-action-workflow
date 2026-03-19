@@ -1,0 +1,14 @@
+name: "Hello world workflow"
+# Contols when the actoin will run.
+on: 
+  push:
+    branches:
+      - master
+      - producation
+
+jobs:
+  hello_world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Print hello_world"
+        run echo "Hello world"
